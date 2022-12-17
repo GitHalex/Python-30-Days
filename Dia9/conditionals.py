@@ -101,5 +101,50 @@ else:
 
 """ if person['is_married'] == True and person['country'] == 'Finland':
    print(person['first_name'], person['last_name'] + ' lives in ', person['country'], 'He is married' ) """
+person={
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_married': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+       }
+}
+
+""" if 'skills' in person:
+   print(person['skills'][2])
+else:
+   print('no tiene habilidades')
+
+lista_habilidades = person.get('skills')
+for habilidades in lista_habilidades:
+   if habilidades == 'Python':
+      print(f'{habilidades} Si tiene ese skills') """
+
+lista_habilidades = person.get('skills')
+
+flag = True
+for skill in lista_habilidades:
+   if skill == 'JavaScript':
+      flag = True
+   elif flag and skill == 'React':
+      print('El es un desarrollador Front-end')
+   elif skill == 'Node':
+      flag == True
+   elif flag and skill == 'MongoDB':
+      flag = True
+   elif flag and skill == 'Python':
+      print('Backend')
+   else:
+      print('No tiene habilidades')
+
+
+casado = person['is_married']
+if casado and person['country'] == 'Finland':
+   print(f"{person['first_name']} {person['last_name']} lives in {person['country']}. he is married ")
+   
 
 
