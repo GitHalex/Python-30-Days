@@ -7,5 +7,9 @@ aplanar = [number for row in list_of_lists for number in row]
 print(aplanar)
 
 
-tuplas = [(i, i**i, i**i, i**i, i**i, i**i, i**i) for i in range(11)]
+tuplas = [(i, i**0, i**1, i**2, i**3, i**4, i**5) for i in range(11)]
 print(tuplas)
+
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+lista_countries = countries.split(' ')
+print(lista_countries)

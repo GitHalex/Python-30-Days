@@ -16,17 +16,17 @@ for i in range(10, -1):
    print(i) """
 
 """ for i in range(8):
-   print('#'*i)
+   print('#'*i) """
 
-for i in range(8):
+""" for i in range(8):
    for j in range(8):
       print('#', end='')
-   print(' ') """
-
+   print(' ')
+ """
 """ for i in range(11):
     print(f'{i} x {i} = {i*i}')
-
-tecnologias = ['Python', 'Numpy','Pandas','Django', 'Flask'] 
+ """
+""" tecnologias = ['Python', 'Numpy','Pandas','Django', 'Flask'] 
 for tecnologia in tecnologias:
    print(tecnologia) """
 
@@ -2878,4 +2878,21 @@ countries_data =[
     }
 ]
       
-print(len(countries_data))
+""" print(len(countries_data))
+
+for key, value in countries_data.items():
+   print(key, value) """
+
+
+
+""" for key in countries_data:
+    print(key)
+
+for key, value in countries_data.items():
+    print(key, value) # this way we get both keys and values printed out """
+
+
+for key in countries_data:
+   if key == 'languages':
+      for language in countries_data['languages']:
+         print(language)

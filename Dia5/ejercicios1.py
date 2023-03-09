@@ -66,3 +66,5 @@ print(fullstack)
 fullstack.insert(6, 'SQL')
 print(fullstack)
 
+numeros = [10,20,30]
+print(sum(numeros))
